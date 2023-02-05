@@ -2,7 +2,11 @@
 name = "utils"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+authors = ["Vadim Nicolai <nicolai.vadim@gmail.com>"]
 
 [dependencies]
+reqwest = "0.11.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.92"
+tokio = { version = "1", features = ["full"] }
+mini-redis = "0.4"
